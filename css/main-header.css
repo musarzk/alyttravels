@@ -170,12 +170,13 @@ float: left;
 
 .main-menu li a {
 padding: 0 10px;
-color: rgba(255, 4, 4, 0.945);
+color: rgba(255, 255, 255, 0.945);
 text-decoration: none;
 line-height: 30px;
-text-shadow: 1px 1px 1px rgb(255, 255, 255);
+text-shadow: 1px 1px 1px rgb(121, 117, 117);
 
 }
+
 
 
 /* .main-menu li a:hover {
