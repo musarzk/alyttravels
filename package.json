@@ -10,6 +10,6 @@
   "license": "ISC",
   "homepage": "https://musarzk.github.io/alytwebsite",
   "dependencies": {
-    "git-pages": "^0.8.1"
+    "gh-pages": "^5.0.0"
   }
 }
