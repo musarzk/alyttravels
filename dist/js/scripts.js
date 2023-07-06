@@ -1,5 +1,10 @@
 // FRAGMENT BUILT FOR THE WIDGET
 
+
+
+$(document).ready(function(){
+			
+
 $(function() {
 	var fragmentIncludes = $('fragment-include'),
 		fragmentsToLoad = fragmentIncludes.length,
@@ -26,9 +31,21 @@ $(function() {
 				}
 
 				// MENU TOGGLE
-				$('.menu-toggle').on('click', function() {
-					$('body').toggleClass('menu-expanded');
+				$('.menu-toggle').on('click', function(){
+					
+					$('nav').toggleClass('expanded');
+
+
 				});
+
+
+
+				
+
+
+
+
+
 
 				// SLIDER
 				if ($.fn.slider) {
@@ -118,6 +135,8 @@ $(function() {
 						clockTime.text(currentDateTime);
 					}
 				}, 1000);
+
+				
 				// WEATHER DISPPLAAY
 				var updateWeather = function() {
 					$.get("https://api.openweathermap.org/data/2.5/weather?q=Kampala,ug&appid=6ca744f52c9249f074c38af65f845302&units=metric", function(weather) {
@@ -167,4 +186,6 @@ $(function() {
 			}
 		})
 	});
+});
+
 });

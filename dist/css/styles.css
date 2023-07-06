@@ -1,7 +1,15 @@
+*,html{
+box-sizing: border-box;
+
+}
+
+
+
 body {
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
     color: #333;
     font-size: 14px;
+    box-sizing: border-box;
 }
 ul,
 body,
@@ -25,17 +33,30 @@ video {
 .main-section .main-title {
     font-size: 36px;
     padding: 20px 0;
-    background-color: rgb(31, 78, 121);
+    background-color: #007dd6;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 60px;
+    text-align: center;
+   
     text-transform: uppercase;
     color: #fff;
+    margin-right: -50px;
+   
 }
 .main-title span {
     display: block;
     line-height: 1em;
 }
+.main-title span:first-child {
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: bold;
+}
+
 .main-title span:last-child {
-    font-size: 18px;
-    line-height: 24px;
+  font-size: 25px;
+  line-height: 20px;
 }
 .partners {
     display: flex;
@@ -62,3 +83,69 @@ video {
     width: 100%;
     display: block;
 }
+
+
+@media screen and (max-width: 768px) {
+    *,
+    html {
+      box-sizing: border-box;
+    }
+  
+    body {
+      font-size: 14px;
+      box-sizing: border-box;
+    }
+  
+    .main-section .title {
+      font-size: 18px;
+      line-height: 40px;
+      margin-right: 0;
+    }
+  
+    .main-section .main-title {
+      font-size: 30px;
+      line-height: 50px;
+     
+      width: 100vw;
+      margin-right: 0;
+    }
+  
+    .main-title span:last-child {
+      font-size: 14px;
+      line-height: 20px;
+    }
+
+    .main-title span:first-child {
+      font-size: 20px;
+      line-height: 20px;
+    }
+
+  }
+  
+  @media screen and (max-width: 480px) {
+    .main-section .title {
+      font-size: 16px;
+      line-height: 30px;
+    }
+  
+    .main-section .main-title {
+      font-size: 26px;
+      line-height: 40px;
+    }
+  
+    .main-title span:last-child {
+      font-size: 12px;
+      line-height: 18px;
+    }
+
+    .main-title span:first-child {
+      font-size: 20px;
+      line-height: 20px;
+    }
+
+  
+    .partners img {
+      height: 40px;
+    }
+  }
+  
